@@ -24,7 +24,7 @@
 
     <edu.upenn.cis350.PaintBrushView
         android:layout_width="fill_parent"
-        android:layout_height="400px" />
+        android:layout_height="400dp" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -32,7 +32,7 @@
         android:orientation="horizontal" >
 
         <edu.upenn.cis350.PaletteView
-            android:layout_width="370px"
+            android:layout_width="370dp"
             android:layout_height="wrap_content" />
 
         <Button
