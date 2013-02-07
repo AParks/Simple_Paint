@@ -20,9 +20,12 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-    <edu.upenn.cis350.PaintBrushView
+        android:text="wassup" />
+    
+    
+     
+     <edu.upenn.cis350.PaintBrushView
+        android:id="@+id/paintBrush" 
         android:layout_width="fill_parent"
         android:layout_height="400dp" />
 
@@ -32,13 +35,15 @@
         android:orientation="horizontal" >
 
         <edu.upenn.cis350.PaletteView
-            android:layout_width="370dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"/>
 
         <Button
+            android:id="@+id/clear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Clear" />
+            android:onClick="onClearButtonClick"
+            android:text="@string/clear" />
     </LinearLayout>
 
 </LinearLayout>

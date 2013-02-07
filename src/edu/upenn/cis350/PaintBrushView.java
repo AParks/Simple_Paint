@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.graphics.Path;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -15,6 +14,9 @@ public class PaintBrushView extends View {
 
 	private int x;
 	private int y;
+	
+
+
 	private ArrayList<Line> lines;
 
 	public PaintBrushView(Context context, AttributeSet attrs) {
@@ -29,9 +31,8 @@ public class PaintBrushView extends View {
 
 	}
 
-	private void init() {
+	public void init() {
 		lines = new ArrayList<Line>();
-
 	}
 
 	public boolean onTouchEvent(MotionEvent e) {
