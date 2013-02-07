@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Chronometer;
 
 public class MainActivity extends Activity {
 
@@ -11,6 +12,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		((Chronometer) findViewById(R.id.chronometer1)).start();		
 	}
 
 	@Override
@@ -19,13 +21,14 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
-	
 
 	public void onClearButtonClick(View view) {
-		
-		PaintBrushView canvas = (PaintBrushView)findViewById(R.id.paintBrush);
+		PaintBrushView canvas = (PaintBrushView) findViewById(R.id.paintBrush);
 		canvas.init();
 		canvas.invalidate();
+	}
+
+	public void startChronometer(View view) {
 		
 	}
 
